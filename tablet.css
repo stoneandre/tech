@@ -1,0 +1,118 @@
+@media (max-width:1110px) {
+    .container {
+        max-width: 715px;
+        padding-inline-start: 5px;
+        padding-inline-end: 5px;
+        /* background-color: red; */
+    }
+
+    header {
+        .logo {
+            margin-bottom: 64px;
+        }
+
+        .hero {
+            flex-direction: column;
+
+            .hero_text {
+                max-width: inherit;
+
+            }
+
+            .hero-bg {
+                max-width: inherit;
+            }
+        }
+    }
+
+    main {
+        padding-block: 80px;
+
+        .together {
+            flex-direction: column;
+
+            .together-bg {
+                max-width: inherit;
+                order: 1;
+            }
+
+            .together_text {
+                max-width: inherit;
+                width: 100%;
+
+                ul {
+                    max-width: inherit;
+                }
+            }
+        }
+
+        .average {
+            flex-direction: column;
+            margin-bottom: 80px;
+
+            &::before {
+                bottom: calc(0px + 50px);
+                left: auto;
+                transform: translateX(-50px);
+                right: 0;
+                /* bottom: 0;
+                left: auto;
+                transform: translateX(0);
+                right: 0;
+                margin-right: 50px;
+                margin-bottom: 50px; */
+            }
+
+            .average_text {
+                max-width: inherit;
+            }
+
+            .average-bg {
+                max-width: inherit;
+            }
+        }
+
+        .journey {
+            display: none;
+        }
+
+        .options {
+            margin-bottom: 80px;
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            .cards {
+                flex-wrap: wrap;
+                align-content: flex-start;
+                /* justify-content: center; */
+                input:checked+label{
+                    transform: scale(1.1);
+                }
+                label{
+                    width: 340px;
+                    a{
+                        max-width: inherit;
+                    }
+                }
+            }
+        }
+        .review{
+            background-position: left top;
+            blockquote{
+                text-align: left;
+                p{
+                    text-align: left;
+                }
+            }
+        }
+    }
+    footer{
+        padding-block-start: 64px;
+        padding-inline-start: 32px;
+        padding-inline-end: 32px;
+        .foot{
+        }
+    }
+}
